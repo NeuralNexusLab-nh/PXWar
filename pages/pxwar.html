@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>PX War - Advanced</title>
+<title>PX War</title>
 <style>
 * {
   margin: 0;
@@ -339,11 +339,11 @@ body {
 <body>
 <div id="app">
   <div id="loadingScreen" class="loading-screen">
-    <h2 id="statusText">PX WAR CONNECTING...</h2>
+    <h2 id="statusText">CONNECTING PX WAR SERVER...</h2>
     <div class="spinner"></div>
     <div id="deviceSelection" class="hidden">
-      <button class="btn" onclick="selectDevice('computer')">PC VERSION</button><br>
-      <button class="btn" onclick="selectDevice('mobile')">MOBILE VERSION</button>
+      <button class="btn" onclick="selectDevice('computer')">PC / KEY BOARD</button><br>
+      <button class="btn" onclick="selectDevice('mobile')">MOBILE / BUTTON</button>
     </div>
   </div>
 
@@ -439,8 +439,9 @@ body {
 
 <script>
 const weapons = {
-  ak47: { name: 'AK-47', damage: 35, acc: 0.1, mag: 30, reload: 2.5, rate: 110, color: '#8B4513' },
+  ak47: { name: 'AK47', damage: 35, acc: 0.1, mag: 30, reload: 2.5, rate: 110, color: '#8B4513' },
   mp5: { name: 'MP5', damage: 22, acc: 0.08, mag: 40, reload: 1.8, rate: 80, color: '#2F4F4F' },
+  p90: { name: 'P90', damage: 22, acc: 0.05, mag: 50, reload: 2, rate: 30, color: '#2F4F4F' },
   awp: { name: 'AWP', damage: 100, acc: 0.005, mag: 5, reload: 3.8, rate: 1500, color: '#000' },
   m4a1: { name: 'M4A1', damage: 30, acc: 0.06, mag: 30, reload: 2.2, rate: 100, color: '#4B5320' },
   mp7: { name: 'MP7', damage: 18, acc: 0.12, mag: 40, reload: 1.6, rate: 65, color: '#333' },
